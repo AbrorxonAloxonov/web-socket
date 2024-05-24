@@ -1,7 +1,5 @@
 package uz.abror.websocket.model;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.*;
 
 /**
@@ -15,8 +13,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@JsonSerialize
-@JsonDeserialize
 public class Message {
 
     private String from;

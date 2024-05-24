@@ -24,7 +24,7 @@ public class WebController {
     @MessageMapping("/chat")
     @SendTo("/topic/messages")
     public OutputMessage send(@Payload Message message) throws Exception {
-        log.debug("Message : {}",message);
+        log.info("Message method : {}",message);
         String time = new SimpleDateFormat("HH:mm").format(new Date());
         return new OutputMessage(message.getFrom(), message.getText(), time);
     }
